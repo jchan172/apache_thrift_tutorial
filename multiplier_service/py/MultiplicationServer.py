@@ -19,9 +19,8 @@
 # under the License.
 #
 
-import sys, glob
+import sys
 sys.path.append('../gen-py')
-#sys.path.insert(0, glob.glob('./lib/py/build/lib.*')[0])
 
 from multi import MultiplicationService
 from multi.ttypes import *

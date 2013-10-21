@@ -62,7 +62,7 @@ Thrift should be installed. Check it by running:
 	thrift --version
 
 Check That Apache Thrift Works Correctly
-========================================
+----------------------------------------
 
 Go into the tutorial directory under the top level thrift directory.
 
@@ -158,3 +158,7 @@ Compiling
 Linking
 
     g++ -L/usr/local/lib MultiplicationClient.o MultiplicationService.o multi_constants.o multi_types.o -o MultiplicationClient -lthrift
+
+*Reference*
+
+[http://wiki.apache.org/thrift/ThriftUsageC%2B%2B][Apache Thrift C++ Reference]

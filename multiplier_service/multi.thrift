@@ -1,6 +1,6 @@
-namespace java multi
 namespace py multi
 namespace cpp multi
+namespace rb multi
 
 typedef i32 int
 
