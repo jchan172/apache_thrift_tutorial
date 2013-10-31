@@ -32,8 +32,6 @@ struct ContactsList
 
 service AddressBook
 {
-	string getPerson(1:i32 id)
-	string addPerson(1:Person person)
-	string listAll(1:string contacts_list)
-	string saveContacts(1:ContactsList contacts, 2:string filename)
+	string listAll(1:string filename)
+	string addContact(1:Person person, 2:string filename)
 }
