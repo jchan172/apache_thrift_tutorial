@@ -149,6 +149,8 @@ Linking
     
     g++ -L/usr/local/lib *.o -o MultiplicationServer -lthrift
 
+    Note: I had to run `export LD_LIBRARY_PATH=/usr/bin/local/` as a hack to load the library path.
+
 ###Client
 
 Compiling

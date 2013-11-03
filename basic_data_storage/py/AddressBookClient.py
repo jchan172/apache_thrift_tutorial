@@ -28,9 +28,9 @@ def AddContact(client, filename):
   server_response = client.addContact(person, filename)
   print 'Adding person to address book...%s' % (server_response)
 
-def ViewAllUsers(client, contacts_list):
+def ViewAllUsers(client, addr_book_file):
   # Call server and send binary data over to server.
-  server_response = client.listAll(contacts_list)
+  server_response = client.listAll(addr_book_file)
   print 'Listing contacts...\n%s' % (server_response)
 
 
