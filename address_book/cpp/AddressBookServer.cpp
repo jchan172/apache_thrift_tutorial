@@ -1,5 +1,5 @@
 // include the generated code for address book
-#include "AddressBook.h"
+#include "../gen-cpp/AddressBook.h"
 // include the Thrift code
 #include <thrift/protocol/TCompactProtocol.h>
 #include <thrift/protocol/TBinaryProtocol.h>
@@ -151,7 +151,7 @@ int main(int argc, char **argv) {
 
 	TSimpleServer server(processor, serverTransport, transportFactory, protocolFactory); // Create a simple server.
 	// printf("Starting server...\n");
-	cout << "Starting server...\n";
+	cout << "Starting the Address Book server...\n";
 	server.serve();
 	cout << "Done.\n";
 	return 0;

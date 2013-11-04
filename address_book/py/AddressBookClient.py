@@ -47,7 +47,7 @@ try:
   # Connect to server.
   transport.open()
 
-  addr_book_file = raw_input("Enter address book's filename: ")
+  addr_book_file = "../" + raw_input("Enter address book's filename: ")
   while True:
     resp = raw_input("Add person (A), view all (V), quit (Q): ")
     if resp.upper() == "Q":

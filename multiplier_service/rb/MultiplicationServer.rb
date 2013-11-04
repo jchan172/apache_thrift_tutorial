@@ -32,10 +32,6 @@ class MultiplicationServiceHandler
     @log = {}
   end
 
-  def ping()
-    puts "ping()"
-  end
-
   def multiply(n1, n2)
     print "multiply(", n1, ",", n2, ")\n"
     return n1*n2
@@ -44,7 +40,7 @@ class MultiplicationServiceHandler
 end
 
 handler = MultiplicationServiceHandler.new()
-processor = MultiplicationService::Processor.new(handler) # this is specified in gen-rb/multiplication_service.rb
+processor = Multi::MultiplicationService::Processor.new(handler) # this is specified in gen-rb/multiplication_service.rb
 transport = Thrift::ServerSocket.new(9090)
 transportFactory = Thrift::BufferedTransportFactory.new()
 server = Thrift::SimpleServer.new(processor, transport, transportFactory)

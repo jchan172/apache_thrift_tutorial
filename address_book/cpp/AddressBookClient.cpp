@@ -83,6 +83,7 @@ int main(int argc, char** argv) {
 		string addr_book_file;
 		cout << "Enter address book's filename: ";
 		getline(cin, addr_book_file);
+		addr_book_file = "../" + addr_book_file;
 
 		bool stop = false;
 		while (stop == false) {

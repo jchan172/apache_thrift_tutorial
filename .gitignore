@@ -1,0 +1,6 @@
+address_book/gen-*
+address_book/cpp/AddressBookClient
+address_book/cpp/AddressBookServer
+multiplier_service/gen-*
+multiplier_service/cpp/MultiplicationClient
+multiplier_service/cpp/MultiplicationServer

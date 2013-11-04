@@ -31,7 +31,7 @@ begin
 
   transport = Thrift::BufferedTransport.new(Thrift::Socket.new('localhost', port))
   protocol = Thrift::BinaryProtocol.new(transport)
-  client = MultiplicationService::Client.new(protocol)
+  client = Multi::MultiplicationService::Client.new(protocol)
 
   transport.open()
 
