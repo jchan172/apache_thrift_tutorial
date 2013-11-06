@@ -87,4 +87,14 @@ Generate Ruby code from the .thrift file.
 
 These should complete without errors, and there will be new directories named 'gen-cpp' and 'gen-rb'
 
-Now that Apache Thrift is installed, take a look at the two examples. You can start with the easier one (multiplier_service) and then take a look at the more complicated one (address_book).
+Now that Apache Thrift is installed, take a look at the two examples. You can start with the easier one (`multiplier_service`) and then take a look at the more complicated one (`address_book`).
+
+Notes
+=====
+
+Keep these limitations in mind when developing with Thrift:
+
+- Struct inheritance/polymorphism not supported; use composition instead. Services can inherit from other services though.
+- Can't overload methods in services (can't have methods that have same name but accept different inputs); use unique method names instead.
+- Heterogeneous containers not supported (cannot have a "list<any/combo_type> listname", must have a specified list containing one type throughout, like "list<Person> listname")
+- Can't return `NULL` from a function; return a string or struct or something else to indicate null.
